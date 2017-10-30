@@ -3,15 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SCRPU</title>
+<title>Alquileres</title>
 <link rel="stylesheet" href="public/css/easy-responsive-tabs.css "/>
 <link rel="stylesheet" href="assets/datatables/css/jquery.dataTables.min.css">
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/bootstrap/css/styles.css">
+<link rel="stylesheet" href="public/css/estilofooter.css">
 <link rel="stylesheet" href="public/css/estilo.css">
 <link rel="stylesheet" href="assets/jquery-ui/jquery-ui.css">
 </head>
 <body>
+<br>
+<br>
 <br>
 <div class="container">
   <div class="row">
@@ -21,7 +24,7 @@
           <div class="panel-heading">
             <h4 class="panel-title">
             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
-            </span>Content</a>
+            </span>Alquiler</a>
             </h4>
           </div>
           <div id="collapseOne" class="panel-collapse collapse">
@@ -89,7 +92,7 @@
               </tr>
               <tr>
                 <td>
-                  <a href="?c=vehiculos&m=index">Tex</a>
+                  <a href="?c=vehiculos&m=index">Vehiculos</a>
                 </td>
               </tr>
               </table>

@@ -1,6 +1,6 @@
 <?php $result = $this->vehiculos->listar(); ?>
         <h2>Listado de Vehiculos</h2>   
-    <a href="?c=vehiculos&m=agregar"  class="btn btn-primary" role="button">Registrar Vehiculo</a>
+    <a href="?c=vehiculos&m=agregar"  class="btn btn-primary" role="button">Registrar</a>
    <br>
    <br>   
     <?php if ($result->num_rows): ?>

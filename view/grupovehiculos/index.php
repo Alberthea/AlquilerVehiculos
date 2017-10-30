@@ -1,8 +1,8 @@
 <?php 
 $result = $this->grupovehiculos->listar(); 
 ?>
-    <h2>Listado de Grupos Vehiculos:</h2>   
-    <a href="?c=grupovehiculos&m=agregar" class="btn btn-primary" role="button">Registrar:</a>
+    <h2>Listado de Grupos Vehiculos</h2>   
+    <a href="?c=grupovehiculos&m=agregar" class="btn btn-primary" role="button">Registrar</a>
     <br>
     <br>
     <?php if ($result->num_rows): ?>
