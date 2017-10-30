@@ -9,8 +9,7 @@ class vehiculosController
 	private $vehiculos;
 	function __construct()
 	{
-		$this->
-vehiculos = new vehiculos();
+		$this->vehiculos = new vehiculos();
 	}
 	public function index()
 	{

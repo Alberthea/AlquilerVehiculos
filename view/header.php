@@ -24,7 +24,7 @@
             </span>Content</a>
             </h4>
           </div>
-          <div id="collapseOne" class="panel-collapse collapse in">
+          <div id="collapseOne" class="panel-collapse collapse">
             <div class="panel-body">
               <table class="table">
               <tr>
@@ -64,22 +64,32 @@
               <table class="table">
               <tr>
                 <td>
-                  <a href="http://www.jquery2dotnet.com">Orders</a><span class="label label-success">$ 320</span>
+                  <li class="divider">Primarios</li>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="?c=vehiculos&m=index">Vehiculos</a>
+                  <a href="?c=oficinas&m=index">Oficinas</a>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="http://www.jquery2dotnet.com">Shipments</a>
+                  <a href="?c=grupovehiculos&m=index">Grupo Vehiculos</a>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="http://www.jquery2dotnet.com">Tex</a>
+                  <li class="divider">Secundarios</li>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="?c=direccionofi&m=index">Dirección de Oficina</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="?c=vehiculos&m=index">Tex</a>
                 </td>
               </tr>
               </table>
