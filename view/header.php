@@ -169,4 +169,4 @@
     </div>
     <br>
     <div class="col-sm-9 col-md-9">
-      <div class="container-fluid well">
+      <div class="container-fluid">

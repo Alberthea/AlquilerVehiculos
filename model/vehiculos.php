@@ -11,17 +11,17 @@ class vehiculos  extends Conexion
 	{
 		$this->conexion = new Conexion();
 	}
-	public function setAtributo($CodGrupo, $valor)
+	public function setAtributo($Marca, $valor)
 	{
-		$this->$CodGrupo = ucfirst(strtolower($valor)); 
+		$this->$Marca = ucfirst(strtolower($valor)); 
 	}
-	public function getAtributo($CodGrupo)
+	public function getAtributo($Marca)
 	{
-		return $this->$CodGrupo;
+		return $this->$Marca;
 	}
 	public function buscar($Matricula)
 	 {
-	 	$sql = "CALL SP02_PUESTOS_BUSCAR ('".$Matricula."');";
+	 	$sql = "call SP_VEHICULOS_BUSCAR ('".$Matricula."');";
 	 	$result = $this->conexion->consultaRetorno($sql);
 		$cliente = $this->convertTovehiculos($result);
 	 	return $cliente;
