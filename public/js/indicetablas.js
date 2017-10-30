@@ -2,7 +2,7 @@
 $(document).ready(function() {
     $('#grilla-inspeccion').DataTable();
     $('#grilla-Vehiculos').DataTable();
-    $('#grilla-usuarios').DataTable();
+    $('#grilla-grupovehiculos').DataTable();
     $('#grilla-inspeccion').DataTable();
     $('#grilla-actdes').DataTable();
     $('#grilla-terrft').DataTable();

@@ -64,7 +64,7 @@
               <table class="table">
               <tr>
                 <td>
-                  <a href="http://www.jquery2dotnet.com">Orders</a><span class="label label-success">$ 320</span>
+                  <a href="?c=grupovehiculos&m=index">Grupos de Vehiculos</a>
                 </td>
               </tr>
               <tr>
@@ -159,4 +159,4 @@
     </div>
     <br>
     <div class="col-sm-9 col-md-9">
-      <div class="container-fluid well">
+      <div class="container-fluid">
