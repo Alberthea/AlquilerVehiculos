@@ -1,15 +1,15 @@
-<?php $result = $this->oficinas->listar(); ?>
-        <h2>Listado de Oficina</h2>   
-    <a href="?c=oficinas&m=agregar"  class="btn btn-primary" role="button">Registrar</a>
+<?php $result = $this->seguros->listar(); ?>
+        <h2>Listado de Seguros</h2>   
+    <a href="?c=seguros&m=agregar"  class="btn btn-primary" role="button">Registrar</a>
    <br>
    <br>   
     <?php if ($result->num_rows): ?>
-      <table class="display table table-bordered" id="grilla-Oficinas">
+      <table class="display table table-bordered" id="grilla-seguros">
         <thead>
           <tr>
             <th>Código</th>
             <th>Nombre</th>
-            <th>Ciudad</th>
+            <th>Descripción</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
@@ -24,15 +24,15 @@
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
                     <li>
-                        <a href="?c=oficinas&m=editar&id=<?php echo $row[0]; ?>">
+                        <a href="?c=seguros&m=editar&id=<?php echo $row[0]; ?>">
                         <span class="glyphicon glyphicon-pencil"></span> Editar</a>
                     </li>
                     <li>
-                      <a href="?c=oficinas&m=eliminar&id=<?php echo $row[0]; ?>">
+                      <a href="?c=seguros&m=eliminar&id=<?php echo $row[0]; ?>">
                        <span  class="glyphicon glyphicon-trash"></span> Eliminar</a>
                     </li>
                      <li>
-                      <a href="?c=oficinas&m=ver&id=<?php echo $row[0]; ?>">
+                      <a href="?c=seguros&m=ver&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                   </ul>

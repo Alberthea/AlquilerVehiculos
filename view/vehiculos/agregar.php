@@ -19,15 +19,5 @@
     <input type="text" class="form-control" id="Modelo" name="Modelo">
   </div>
   <button type="submit" class="btn btn-success">Guardar</button>
-  <a id="regresar" class="btn btn-danger" role="button" href="?c=vehiculos&m=index">Regresar</a>
-  <!--<script type="text/javascript">
-        $("#regresar").click(function(){
-        var bool=confirm("XXXXX----DESEA REGRESAR----XXXXX?");
-        if(bool){
-        $("#contenido").load("?c=vehiculos&m=index");
-        }else{
-        $.alert("CANCELADO");
-        }
-      });
-      </script>-->
+  <a class="btn btn-danger" role="button" href="?c=vehiculos&m=index">Regresar</a>
 </form>

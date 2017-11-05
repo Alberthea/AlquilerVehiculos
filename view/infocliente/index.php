@@ -1,17 +1,16 @@
-<?php $result = $this->direccionofi->listar(); ?>
-        <h2>Listado de Direccion Oficina</h2>   
-    <a href="?c=direccionofi&m=agregar"  class="btn btn-primary" role="button">Registrar</a>
+<?php $result = $this->infocliente->listar(); ?>
+        <h2>Listado de Cliente</h2>   
+    <a href="?c=infocliente&m=agregar"  class="btn btn-primary" role="button">Registrar</a>
    <br>
    <br>   
     <?php if ($result->num_rows): ?>
-      <table class="display table table-bordered" id="grilla-DireccionOficina">
+      <table class="display table table-bordered" id="grilla-Clientes">
         <thead>
           <tr>
-            <th>Código</th>
-            <th>Calle</th>
-            <th>Número</th>
-            <th>CodPostal</th>
-            <th>Teléfono</th>
+            <th>DNI</th>
+            <th>NombreConductor</th>
+            <th>Apellido1</th>
+            <th>Apellido2</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
@@ -23,20 +22,23 @@
               <td><?php echo $row[2]; ?></td>
               <td><?php echo $row[3]; ?></td>
               <td><?php echo $row[4]; ?></td>
+              <td><?php echo $row[5]; ?></td>
+              <td><?php echo $row[6]; ?></td>
+              <td><?php echo $row[7]; ?></td>
               <td><div class="dropdown">
                 <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Opciones
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
                     <li>
-                        <a href="?c=direccionofi&m=editar&id=<?php echo $row[0]; ?>">
+                        <a href="?c=infocliente&m=editar&id=<?php echo $row[0]; ?>">
                         <span class="glyphicon glyphicon-pencil"></span> Editar</a>
                     </li>
                     <li>
-                      <a href="?c=direccionofi&m=eliminar&id=<?php echo $row[0]; ?>">
+                      <a href="?c=infocliente&m=eliminar&id=<?php echo $row[0]; ?>" id="eliminar">
                        <span  class="glyphicon glyphicon-trash"></span> Eliminar</a>
                     </li>
                      <li>
-                      <a href="?c=direccionofi&m=ver&id=<?php echo $row[0]; ?>">
+                      <a href="?c=infocliente&m=ver&id=<?php echo $row[0]; ?>">
                        <span class="glyphicon glyphicon-eye-open"></span> ver</a>
                     </li>
                   </ul>

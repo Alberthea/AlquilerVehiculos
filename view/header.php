@@ -72,6 +72,11 @@
               </tr>
               <tr>
                 <td>
+                  <a href="?c=seguros&m=index">Seguros</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
                   <a href="?c=oficinas&m=index">Oficinas</a>
                 </td>
               </tr>
