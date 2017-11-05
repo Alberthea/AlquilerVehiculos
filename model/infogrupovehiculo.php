@@ -1,5 +1,6 @@
 <?php 
-class infovehiculo extends Conexion
+require_once 'conexion.php';
+class infogrupovehiculo extends Conexion
 {
 	private $CodGrupo;
 	private $NombreGrupo;
@@ -26,8 +27,8 @@ class infovehiculo extends Conexion
 	{
 		$sql = "CALL SP_INFOGRUPOVEHICULOS_BUSCAR('".$CodGrupo."');";
 		$result = $this->conexion->consultaRetorno($sql);
-		$grupovehiculos = $this->convertTogrupovehiculos($result);
-		return $grupovehiculos;
+		$infogrupovehiculo = $this->convertToinfogrupovehiculo($result);
+		return $infogrupovehiculo;
 	}
 
 	public function listar()
@@ -55,17 +56,17 @@ class infovehiculo extends Conexion
 		$this->conexion->consultaSimple($sql);
 	}
 
-	public function convertTogrupovehiculos($result)
+	public function convertToinfogrupovehiculo($result)
 	{
-		$grupovehiculos = new grupovehiculos();
+		$infogrupovehiculo = new infogrupovehiculo();
 		while ($row = mysqli_fetch_array($result)) {
-			$grupovehiculos->setAtributo('CodGrupo',$row[0]);
-			$grupovehiculos->setAtributo('NombreGrupo',$row[1]);
-			$grupovehiculos->setAtributo('Tipo',$row[2]);
-			$grupovehiculos->setAtributo('TamanoVehiculo',$row[3]);
-			$grupovehiculos->setAtributo('EdadMinima',$row[4]);
+			$infogrupovehiculo->setAtributo('CodGrupo',$row[0]);
+			$infogrupovehiculo->setAtributo('NombreGrupo',$row[1]);
+			$infogrupovehiculo->setAtributo('Tipo',$row[2]);
+			$infogrupovehiculo->setAtributo('TamanoVehiculo',$row[3]);
+			$infogrupovehiculo->setAtributo('EdadMinima',$row[4]);
 		}
-		return $grupovehiculos;
+		return $infogrupovehiculo;
 	}
 }
  ?>

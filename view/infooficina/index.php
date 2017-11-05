@@ -1,3 +1,4 @@
+<br><br>
 <?php $result = $this->infooficina->listar(); ?>
         <h2>Listado de Direccion Oficina</h2>   
     <a href="?c=infooficina&m=agregar"  class="btn btn-primary" role="button">Registrar</a>
@@ -56,5 +57,4 @@
           <?php endif; ?>
         </tbody>
       </table>
-
-   
+      <br><br>

@@ -1,3 +1,4 @@
+<br><br>
   <center>
     <h2>Editar Grupo Vehiculo: <?php echo $this->infogrupovehiculo->getAtributo('NombreGrupo');?> </h2>
   </center>
@@ -26,5 +27,4 @@
       <button type="submit" class="btn btn-success">Editar</button> 
       <a href="?c=infogrupovehiculo&m=index" class="btn btn-danger" role="button">Regresar</a>    
     </form>
-  
-
+    <br><br>

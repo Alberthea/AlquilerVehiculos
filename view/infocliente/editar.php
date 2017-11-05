@@ -1,3 +1,4 @@
+<br><br>
 <center>
 <h2>Editar Cliente: <?php echo $this->cliente->getAtributo('NombreConductor');?> </h2>
 </center>
@@ -37,4 +38,4 @@
   <button type="submit" class="btn btn-success">Editar</button>
   <a href="?c=cliente&m=index" class="btn btn-danger" role="button">Regresar</a>
 </form>
-  
+<br><br>

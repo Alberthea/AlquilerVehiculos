@@ -1,3 +1,4 @@
+<br><br>
 <?php $result = $this->infocliente->listar(); ?>
         <h2>Listado de Cliente</h2>   
     <a href="?c=infocliente&m=agregar"  class="btn btn-primary" role="button">Registrar</a>

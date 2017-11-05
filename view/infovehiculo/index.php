@@ -1,3 +1,4 @@
+<br><br>
 <?php $result = $this->infovehiculo->listar(); ?>
         <h2>Listado de Vehiculos</h2>   
     <a href="?c=infovehiculo&m=agregar"  class="btn btn-primary" role="button">Registrar</a>
@@ -59,4 +60,4 @@
         </tbody>
       </table>
 
-   
+   <br><br>
