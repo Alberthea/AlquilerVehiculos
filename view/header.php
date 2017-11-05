@@ -72,12 +72,17 @@
               </tr>
               <tr>
                 <td>
-                  <a href="?c=oficinas&m=index">Oficinas</a>
+                  <a href="?c=infocliente&m=index">Clientes</a>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="?c=grupovehiculos&m=index">Grupo Vehiculos</a>
+                  <a href="?c=seguros&m=index">Seguros</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="?c=infovehiculo&m=index">Vehiculos</a>
                 </td>
               </tr>
               <tr>
@@ -87,12 +92,12 @@
               </tr>
               <tr>
                 <td>
-                  <a href="?c=direccionofi&m=index">Dirección de Oficina</a>
+                  <a href="?c=infooficina&m=index">Dirección de Oficinas</a>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="?c=vehiculos&m=index">Vehiculos</a>
+                  <a href="?c=infogrupovehiculo&m=index">Grupo Vehiculos</a>
                 </td>
               </tr>
               </table>
