@@ -1,3 +1,4 @@
+<br><br>
 <center>
 <h2>Agregar nueva Oficina</h2>
 </center>
@@ -33,3 +34,4 @@
   <button type="submit" class="btn btn-success">Guardar</button>
   <a id="regresar" class="btn btn-danger" role="button" href="?c=infooficina&m=index">Regresar</a>
 </form>
+<br><br>

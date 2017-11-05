@@ -1,3 +1,4 @@
+<br><br>
 <center>
 <h2>Editar Vehiculo: <?php echo $this->infovehiculo->getAtributo('Marca');?> </h2>
 </center>
@@ -38,3 +39,4 @@
   <a href="?c=infovehiculo&m=index" class="btn btn-danger" role="button">Regresar</a>
 </form>
   
+<br><br>

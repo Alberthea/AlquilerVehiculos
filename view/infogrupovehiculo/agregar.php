@@ -1,3 +1,4 @@
+<br><br>
 <center>
 <h2>Agregar Nuevo Grupo de Vehiculos</h2>
 </center>
@@ -25,3 +26,4 @@
   <button type="submit" class="btn btn-success">Guardar</button>
   <a href="?c=infogrupovehiculo&m=index" class="btn btn-danger" role="button">Regresar</a>
 </form>
+<br><br>

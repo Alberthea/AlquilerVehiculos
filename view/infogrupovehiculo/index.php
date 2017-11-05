@@ -1,6 +1,5 @@
-<?php 
-$result = $this->infogrupovehiculo->listar(); 
-?>
+<br><br>
+<?php $result = $this->infogrupovehiculo->listar(); ?>
     <h2>Listado de Grupos Vehiculos</h2>   
     <a href="?c=infogrupovehiculo&m=agregar" class="btn btn-primary" role="button">Registrar</a>
     <br>
@@ -54,3 +53,4 @@ $result = $this->infogrupovehiculo->listar();
           <?php endif ?>
         </tbody>
       </table>
+<br><br>

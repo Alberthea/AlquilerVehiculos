@@ -1,3 +1,4 @@
+<br><br>
 <center>
 <h2>Editar Oficina: <?php echo $this->infooficina->getAtributo('NombreOfi');?> </h2>
 </center>
@@ -33,4 +34,5 @@
   <button type="submit" class="btn btn-success">Editar</button>
   <a href="?c=infooficina&m=index" class="btn btn-danger" role="button">Regresar</a>
 </form>
+<br><br>
   

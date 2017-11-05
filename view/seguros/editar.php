@@ -1,3 +1,4 @@
+<br><br>
 <center>
 <h2>Editar Seguro: <?php echo $this->seguros->getAtributo('DescripcionSeguro');?> </h2>
 </center>
@@ -18,3 +19,4 @@
   <a href="?c=seguros&m=index" class="btn btn-danger" role="button">Regresar</a>
 </form>
   
+<br><br>

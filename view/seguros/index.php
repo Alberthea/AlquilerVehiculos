@@ -1,3 +1,4 @@
+<br><br>
 <?php $result = $this->seguros->listar(); ?>
         <h2>Listado de Seguros</h2>   
     <a href="?c=seguros&m=agregar"  class="btn btn-primary" role="button">Registrar</a>
@@ -49,4 +50,4 @@
         </tbody>
       </table>
 
-   
+   <br><br>

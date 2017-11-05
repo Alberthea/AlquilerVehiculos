@@ -1,23 +1,24 @@
 <?php 
 require_once 'conexion.php';
-class seguros  extends Conexion
+class seguros extends Conexion
 {
 	private $CodTipoSeguro;
 	private $NombreSeguro;
 	private $DescripcionSeguro;
+	private $MontoSeguro;
 
 	private $conexion;
 	function __construct()
 	{
 		$this->conexion = new Conexion();
 	}
-	public function setAtributo($DescripcionSeguro, $valor)
+	public function setAtributo($nombre, $valor)
 	{
-		$this->$DescripcionSeguro = ucfirst(strtolower($valor)); 
+		$this->$nombre = ucfirst(strtolower($valor)); 
 	}
-	public function getAtributo($DescripcionSeguro)
+	public function getAtributo($nombre)
 	{
-		return $this->$DescripcionSeguro;
+		return $this->$nombre;
 	}
 	public function buscar($CodTipoSeguro)
 	 {
@@ -34,12 +35,12 @@ class seguros  extends Conexion
 	}
 	public function guardar()
 	{
-		$sql = "CALL SP_SEGUROS_GUARDAR('$this->CodTipoSeguro','$this->NombreSeguro','$this->DescripcionSeguro');";
+		$sql = "CALL SP_SEGUROS_GUARDAR('$this->CodTipoSeguro','$this->NombreSeguro','$this->DescripcionSeguro','$this->MontoSeguro');";
 		$this->conexion->consultaSimple($sql);
 	}
 	public function actualizar()
 	{
-		$sql = "CALL SP_SEGUROS_ACTUALIZAR('$this->CodTipoSeguro','$this->NombreSeguro','$this->DescripcionSeguro');";
+		$sql = "CALL SP_SEGUROS_ACTUALIZAR('$this->CodTipoSeguro','$this->NombreSeguro','$this->DescripcionSeguro','$this->MontoSeguro');";
 		$this->conexion->consultaSimple($sql);
 	}
 	public function eliminar()
@@ -54,6 +55,7 @@ class seguros  extends Conexion
 			$seguros->setAtributo('CodTipoSeguro',$row[0]);
 			$seguros->setAtributo('NombreSeguro',$row[1]);
 			$seguros->setAtributo('DescripcionSeguro',$row[2]);
+			$seguros->setAtributo('MontoSeguro',$row[3]);
 		}
 		return $seguros;
 	}
