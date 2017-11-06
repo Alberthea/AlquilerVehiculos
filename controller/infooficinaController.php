@@ -16,9 +16,9 @@ class infooficinaController
 	public function agregar()
 	{
 		if ($_POST) {
-			$this->oficinas->setAtributo('CodOficina',$_POST['CodOficina']);
-			$this->oficinas->setAtributo('NombreOfi',$_POST['NombreOfi']);
-			$this->oficinas->setAtributo('CiudadOfi',$_POST['CiudadOfi']);
+			$this->infooficina->setAtributo('CodOficina',$_POST['CodOficina']);
+			$this->infooficina->setAtributo('NombreOfi',$_POST['NombreOfi']);
+			$this->infooficina->setAtributo('CiudadOfi',$_POST['CiudadOfi']);
 			$this->infooficina->setAtributo('Calle',$_POST['Calle']);
 			$this->infooficina->setAtributo('Numero',$_POST['Numero']);
 			$this->infooficina->setAtributo('CodPostal',$_POST['CodPostal']);
@@ -35,9 +35,9 @@ class infooficinaController
 	public function editar()
 	{
 		if ($_POST) {
-			$this->oficinas->setAtributo('CodOficina',$_POST['CodOficina']);
-			$this->oficinas->setAtributo('NombreOfi',$_POST['NombreOfi']);
-			$this->oficinas->setAtributo('CiudadOfi',$_POST['CiudadOfi']);
+			$this->infooficina->setAtributo('CodOficina',$_POST['CodOficina']);
+			$this->infooficina->setAtributo('NombreOfi',$_POST['NombreOfi']);
+			$this->infooficina->setAtributo('CiudadOfi',$_POST['CiudadOfi']);
 			$this->infooficina->setAtributo('Calle',$_POST['Calle']);
 			$this->infooficina->setAtributo('Numero',$_POST['Numero']);
 			$this->infooficina->setAtributo('CodPostal',$_POST['CodPostal']);

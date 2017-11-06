@@ -1,4 +1,9 @@
-<br><br>
+
+  
+
+<div class="container-fluid">
+ <div class="col-md-8 col-md-offset-2">
+   <br><br><br><br><br>
 <center>
 <h2>Editar Oficina: <?php echo $this->infooficina->getAtributo('NombreOfi');?> </h2>
 </center>
@@ -35,4 +40,5 @@
   <a href="?c=infooficina&m=index" class="btn btn-danger" role="button">Regresar</a>
 </form>
 <br><br>
-  
+ </div>
+</div>

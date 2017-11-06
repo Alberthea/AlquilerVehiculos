@@ -7,6 +7,7 @@ class infogrupovehiculo extends Conexion
 	private $Tipo;
 	private $TamanoVehiculo;
 	private $EdadMinima;
+	private $PrecioDia;
 
 	private $conexion;
 	function __construct()
@@ -25,7 +26,7 @@ class infogrupovehiculo extends Conexion
 
 	public function buscar($CodGrupo)
 	{
-		$sql = "CALL SP_INFOGRUPOVEHICULOS_BUSCAR('".$CodGrupo."');";
+		$sql = "CALL SP_GRUPOVEHICULOS_BUSCAR('".$CodGrupo."');";
 		$result = $this->conexion->consultaRetorno($sql);
 		$infogrupovehiculo = $this->convertToinfogrupovehiculo($result);
 		return $infogrupovehiculo;
@@ -33,26 +34,26 @@ class infogrupovehiculo extends Conexion
 
 	public function listar()
 	{
-		$sql = "CALL SP_INFOGRUPOVEHICULOS_MOSTRAR();";
+		$sql = "CALL SP_GRUPOVEHICULOS_MOSTRAR();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}
 
 	public function guardar()
 	{
-		$sql = "CALL SP_INFOGRUPOVEHICULOS_GUARDAR('$this->CodGrupo','$this->NombreGrupo','$this->Tipo','$this->TamanoVehiculo','$this->EdadMinima');";
+		$sql = "CALL SP_GRUPOVEHICULOS_GUARDAR('$this->CodGrupo','$this->NombreGrupo','$this->Tipo','$this->TamanoVehiculo','$this->EdadMinima','$this->PrecioDia');";
 		$this->conexion->consultaSimple($sql);
 	}
 
 	public function actualizar()
 	{
-		$sql = "CALL SP_INFOGRUPOVEHICULOS_ACTUALIZAR('$this->CodGrupo','$this->NombreGrupo','$this->Tipo','$this->TamanoVehiculo','$this->EdadMinima');";
+		$sql = "CALL SP_GRUPOVEHICULOS_ACTUALIZAR('$this->CodGrupo','$this->NombreGrupo','$this->Tipo','$this->TamanoVehiculo','$this->EdadMinima','$this->PrecioDia');";
 		$this->conexion->consultaSimple($sql);
 	}
 
 	public function eliminar()
 	{
-		$sql = "call SP_INFOGRUPOVEHICULOS_ELIMINAR('$this->CodGrupo')";
+		$sql = "call SP_GRUPOVEHICULOS_ELIMINAR('$this->CodGrupo')";
 		$this->conexion->consultaSimple($sql);
 	}
 
@@ -65,6 +66,7 @@ class infogrupovehiculo extends Conexion
 			$infogrupovehiculo->setAtributo('Tipo',$row[2]);
 			$infogrupovehiculo->setAtributo('TamanoVehiculo',$row[3]);
 			$infogrupovehiculo->setAtributo('EdadMinima',$row[4]);
+			$infogrupovehiculo->setAtributo('PrecioDia',$row[5]);
 		}
 		return $infogrupovehiculo;
 	}

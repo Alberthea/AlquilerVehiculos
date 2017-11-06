@@ -34,7 +34,7 @@ class infoclienteController
 			$this->infocliente->setAtributo('Direccion',$_POST['Direccion']);
 			$this->infocliente->setAtributo('Telefono',$_POST['Telefono']);
 			$this->infocliente->setAtributo('NumTarjeta',$_POST['NumTarjeta']);
-			$this->infocliente->guardarinfocliente();
+			$this->infocliente->guardar();
 			header('location:?c=infocliente&m=index');
 		}
 		else{

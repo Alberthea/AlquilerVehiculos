@@ -1,4 +1,7 @@
-<br><br>
+
+<div class="container-fluid">
+ <div class="col-md-8 col-md-offset-2">
+   <br><br><br><br><br>
 	<div class="row">
 	<div class="panel panel-default">
 		<div class="panel-heading">
@@ -19,3 +22,5 @@
 	</div>
 </div>
 <br><br>
+ </div>
+</div>

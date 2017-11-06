@@ -25,39 +25,39 @@ class infooficina extends Conexion
 	}
 	public function buscar($CodOficina)
 	 {
-	 	$sql = "CALL SP_INFOOFICINA_BUSCAR ('".$CodOficina."');";
+	 	$sql = "CALL SP_OFICINA_BUSCAR ('".$CodOficina."');";
 	 	$result = $this->conexion->consultaRetorno($sql);
 		$infooficina = $this->convertToinfooficina($result);
 	 	return $infooficina;
 	 }
 	public function listar()
 	{
-		$sql = "CALL SP_INFOOFICINA_MOSTRAR();";
+		$sql = "CALL SP_OFICINA_MOSTRAR();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}
 	public function guardar()
 	{
-		$sql = "CALL SP_INFOOFICINA_GUARDAR('$this->CodOficina','$this->NombreOfi','$this->CiudadOfi','$this->Calle','$this->Numero','$this->CodPostal','$this->Telefono');";
+		$sql = "CALL SP_OFICINA_GUARDAR('$this->CodOficina','$this->NombreOfi','$this->CiudadOfi','$this->Calle','$this->Numero','$this->CodPostal','$this->Telefono');";
 		$this->conexion->consultaSimple($sql);
 	}
 	public function actualizar()
 	{
-		$sql = "CALL SP_INFOOFICINA_ACTUALIZAR('$this->CodOficina','$this->NombreOfi','$this->CiudadOfi','$this->Calle','$this->Numero','$this->CodPostal','$this->Telefono');";
+		$sql = "CALL SP_OFICINA_ACTUALIZAR('$this->CodOficina','$this->NombreOfi','$this->CiudadOfi','$this->Calle','$this->Numero','$this->CodPostal','$this->Telefono');";
 		$this->conexion->consultaSimple($sql);
 	}
 	public function eliminar()
 	{
-		$sql = "CALL SP_INFOOFICINA_ELIMINAR('$this->CodOficina');";
+		$sql = "CALL SP_OFICINA_ELIMINAR('$this->CodOficina');";
 		$this->conexion->consultaSimple($sql);
 	}
 	public function convertToinfooficina($result)
 	{
 		$infooficina = new infooficina();
 		while ($row = mysqli_fetch_array($result)) {
-			$oficinas->setAtributo('CodOficina',$row[0]);
-			$oficinas->setAtributo('NombreOfi',$row[1]);
-			$oficinas->setAtributo('CiudadOfi',$row[2]);
+			$infooficina->setAtributo('CodOficina',$row[0]);
+			$infooficina->setAtributo('NombreOfi',$row[1]);
+			$infooficina->setAtributo('CiudadOfi',$row[2]);
 			$infooficina->setAtributo('Calle',$row[3]);
 			$infooficina->setAtributo('Numero',$row[4]);
 			$infooficina->setAtributo('CodPostal',$row[5]);

@@ -35,7 +35,7 @@
     </head>
     <body data-spy="scroll" data-target=".navbar-collapse">
         <!-- Preloader -->
-        <div id="loading">
+        <!--<div id="loading">
             <div id="loading-center">
                 <div id="loading-center-absolute">
                     <div class="object" id="object_one"></div>
@@ -44,7 +44,7 @@
                     <div class="object" id="object_four"></div>
                 </div>
             </div>
-        </div><!--End off Preloader -->
+        </div><!~~End off Preloader ~~>-->
         <div class="culmn">
             <!--Home page style-->
             <header>

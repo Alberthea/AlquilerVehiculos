@@ -26,30 +26,30 @@ class infocliente extends Conexion
 	}
 	public function buscar($DNI)
 	 {
-	 	$sql = "CALL SP_INFOCLIENTE_BUSCAR ('".$DNI."');";
+	 	$sql = "CALL SP_CLIENTE_BUSCAR ('".$DNI."');";
 	 	$result = $this->conexion->consultaRetorno($sql);
 		$infocliente = $this->convertToinfocliente($result);
 	 	return $infocliente;
 	 }
 	public function listar()
 	{
-		$sql = "CALL SP_INFOCLIENTE_MOSTRAR();";
+		$sql = "CALL SP_CLIENTE_MOSTRAR();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}
 	public function guardar()
 	{
-		$sql = "CALL SP_INFOCLIENTE_GUARDAR('$this->DNI','$this->NombreConductor','$this->Apellido1','$this->Apellido2','$this->Edad','$this->Direccion','$this->Telefono','$this->NumTarjeta');";
+		$sql = "CALL SP_CLIENTE_GUARDAR('$this->DNI','$this->NombreConductor','$this->Apellido1','$this->Apellido2','$this->Edad','$this->Direccion','$this->Telefono','$this->NumTarjeta');";
 		$this->conexion->consultaSimple($sql);
 	}
 	public function actualizar()
 	{
-		$sql = "CALL SP_INFOCLIENTE_ACTUALIZAR('$this->DNI','$this->NombreConductor','$this->Apellido1','$this->Apellido2','$this->Edad','$this->Direccion','$this->Telefono','$this->NumTarjeta');";
+		$sql = "CALL SP_CLIENTE_ACTUALIZAR('$this->DNI','$this->NombreConductor','$this->Apellido1','$this->Apellido2','$this->Edad','$this->Direccion','$this->Telefono','$this->NumTarjeta');";
 		$this->conexion->consultaSimple($sql);
 	}
 	public function eliminar()
 	{
-		$sql = "CALL SP_INFOCLIENTE_ELIMINAR('$this->DNI');";
+		$sql = "CALL SP_CLIENTE_ELIMINAR('$this->DNI');";
 		$this->conexion->consultaSimple($sql);
 	}
 	public function convertToinfocliente($result)
