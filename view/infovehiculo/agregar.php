@@ -1,4 +1,7 @@
-<br><br>
+
+<div class="container-fluid">
+ <div class="col-md-8 col-md-offset-2">
+   <br><br><br><br><br>
 <center>
 <h2>Agregar nuevo Vehiculo</h2>
 </center>
@@ -39,3 +42,5 @@
   <a class="btn btn-danger" role="button" href="?c=infovehiculo&m=index">Regresar</a>
 </form>
 <br><br>
+ </div>
+</div>

@@ -1,4 +1,7 @@
-<br><br>
+
+<div class="container-fluid">
+ <div class="col-md-8 col-md-offset-2">
+   <br><br><br><br><br>
 <center>
 <h2>Editar Vehiculo: <?php echo $this->infovehiculo->getAtributo('Marca');?> </h2>
 </center>
@@ -40,3 +43,5 @@
 </form>
   
 <br><br>
+ </div>
+</div>

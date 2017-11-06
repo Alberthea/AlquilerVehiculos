@@ -1,4 +1,7 @@
-<br><br>
+
+<div class="container-fluid">
+ <div class="col-md-8 col-md-offset-2">
+   <br><br><br><br><br>
 <center>
 <h2>Agregar nueva Oficina</h2>
 </center>
@@ -35,3 +38,5 @@
   <a id="regresar" class="btn btn-danger" role="button" href="?c=infooficina&m=index">Regresar</a>
 </form>
 <br><br>
+ </div>
+</div>

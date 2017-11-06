@@ -1,4 +1,7 @@
-<br><br>
+
+<div class="container-fluid">
+ <div class="col-md-8 col-md-offset-2">
+   <br><br><br><br><br>
 <?php $result = $this->infovehiculo->listar(); ?>
         <h2>Listado de Vehiculos</h2>   
     <a href="?c=infovehiculo&m=agregar"  class="btn btn-primary" role="button">Registrar</a>
@@ -61,3 +64,5 @@
       </table>
 
    <br><br>
+ </div>
+</div>

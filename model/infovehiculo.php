@@ -26,30 +26,30 @@ class infovehiculo  extends Conexion
 	}
 	public function buscar($Matricula)
 	 {
-	 	$sql = "call SP_INFOVEHICULOS_BUSCAR ('".$Matricula."');";
+	 	$sql = "call SP_VEHICULOS_BUSCAR ('".$Matricula."');";
 	 	$result = $this->conexion->consultaRetorno($sql);
 		$cliente = $this->convertToinfovehiculo($result);
 	 	return $cliente;
 	 }
 	public function listar()
 	{
-		$sql = "CALL SP_INFOVEHICULOS_MOSTRAR();";
+		$sql = "CALL SP_VEHICULOS_MOSTRAR();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}
 	public function guardar()
 	{
-		$sql = "CALL SP_INFOVEHICULOS_GUARDAR('$this->Matricula','$this->CodGrupo','$this->Marca','$this->Modelo','$this->NPuertas','$this->NAsientos','$this->CapMaletero','$this->EstadoVehiculo');";
+		$sql = "CALL SP_VEHICULOS_GUARDAR('$this->Matricula','$this->CodGrupo','$this->Marca','$this->Modelo','$this->NPuertas','$this->NAsientos','$this->CapMaletero','$this->EstadoVehiculo');";
 		$this->conexion->consultaSimple($sql);
 	}
 	public function actualizar()
 	{
-		$sql = "CALL SP_INFOVEHICULOS_ACTUALIZAR('$this->Matricula','$this->CodGrupo','$this->Marca','$this->Modelo','$this->NPuertas','$this->NAsientos','$this->CapMaletero','$this->EstadoVehiculo');";
+		$sql = "CALL SP_VEHICULOS_ACTUALIZAR('$this->Matricula','$this->CodGrupo','$this->Marca','$this->Modelo','$this->NPuertas','$this->NAsientos','$this->CapMaletero','$this->EstadoVehiculo');";
 		$this->conexion->consultaSimple($sql);
 	}
 	public function eliminar()
 	{
-		$sql = "CALL SP_INFOVEHICULOS_ELIMINAR('$this->Matricula');";
+		$sql = "CALL SP_VEHICULOS_ELIMINAR('$this->Matricula');";
 		$this->conexion->consultaSimple($sql);
 	}
 	public function convertToinfovehiculo($result)

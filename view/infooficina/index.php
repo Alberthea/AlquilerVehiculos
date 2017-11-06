@@ -1,6 +1,9 @@
-<br><br>
+
+<div class="container-fluid">
+ <div class="col-md-8 col-md-offset-2">
+   <br><br><br><br><br>
 <?php $result = $this->infooficina->listar(); ?>
-        <h2>Listado de Direccion Oficina</h2>   
+        <h2>Listado de Oficina</h2>   
     <a href="?c=infooficina&m=agregar"  class="btn btn-primary" role="button">Registrar</a>
    <br>
    <br>   
@@ -58,3 +61,5 @@
         </tbody>
       </table>
       <br><br>
+ </div>
+</div>

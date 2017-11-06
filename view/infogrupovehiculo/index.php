@@ -1,4 +1,7 @@
-<br><br>
+
+<div class="container-fluid">
+ <div class="col-md-8 col-md-offset-2">
+   <br><br><br><br><br>
 <?php $result = $this->infogrupovehiculo->listar(); ?>
     <h2>Listado de Grupos Vehiculos</h2>   
     <a href="?c=infogrupovehiculo&m=agregar" class="btn btn-primary" role="button">Registrar</a>
@@ -9,10 +12,11 @@
         <thead>
           <tr>
             <th>Código:</th>
-            <th>Nombre Grupo:</th>
-            <th>Tipo:</th>
-            <th>Tamaño:</th>
-            <th>Edad Minima:</th>
+            <th>Nombre grupo:</th>
+            <th>Tipo de vehículo:</th>
+            <th>Tamaño de vehículo:</th>
+            <th>Edad mínima:</th>
+            <th>Precio por día:</th>
             <th style="width: 120px;">Más</th>
           </tr>
         </thead>
@@ -24,6 +28,7 @@
               <td><?php echo $row[2]; ?></td>
               <td><?php echo $row[3]; ?></td>
               <td><?php echo $row[4]; ?></td>
+              <td><?php echo $row[5]; ?></td>
               <td><div class="dropdown">
                 <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Opciones
                   <span class="caret"></span></button>
@@ -54,3 +59,5 @@
         </tbody>
       </table>
 <br><br>
+ </div>
+</div>

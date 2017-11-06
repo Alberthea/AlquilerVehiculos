@@ -1,4 +1,7 @@
-<br><br>
+
+<div class="container-fluid">
+ <div class="col-md-8 col-md-offset-2">
+   <br><br><br><br><br>
 <?php $result = $this->seguros->listar(); ?>
         <h2>Listado de Seguros</h2>   
     <a href="?c=seguros&m=agregar"  class="btn btn-primary" role="button">Registrar</a>
@@ -51,3 +54,5 @@
       </table>
 
    <br><br>
+ </div>
+</div>

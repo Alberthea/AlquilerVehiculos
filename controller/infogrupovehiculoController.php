@@ -29,6 +29,7 @@ class infogrupovehiculoController
 			$this->infogrupovehiculo->setAtributo('Tipo',$_POST['Tipo']);
 			$this->infogrupovehiculo->setAtributo('TamanoVehiculo',$_POST['TamanoVehiculo']);
 			$this->infogrupovehiculo->setAtributo('EdadMinima',$_POST['EdadMinima']);
+			$this->infogrupovehiculo->setAtributo('PrecioDia',$_POST['PrecioDia']);
 			$this->infogrupovehiculo->guardar();
 			header('location:?c=infogrupovehiculo&m=index');
 		}
@@ -46,6 +47,7 @@ class infogrupovehiculoController
 			$this->infogrupovehiculo->setAtributo('Tipo',$_POST['Tipo']);
 			$this->infogrupovehiculo->setAtributo('TamanoVehiculo',$_POST['TamanoVehiculo']);
 			$this->infogrupovehiculo->setAtributo('EdadMinima',$_POST['EdadMinima']);
+			$this->infogrupovehiculo->setAtributo('PrecioDia',$_POST['PrecioDia']);
 			$this->infogrupovehiculo->actualizar();
 			header('location:?c=infogrupovehiculo&m=index');
 		}

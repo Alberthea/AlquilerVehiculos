@@ -31,7 +31,7 @@ class alquiler extends Conexion
 	 }
 	public function listar()
 	{
-		$sql = "CALL SP_ALQUILERES_MOSTRAR();";
+		$sql = "CALL MOSTRAR_VIEW_ALQUILER();";
 		$result = $this->conexion->consultaRetorno($sql);
 		return $result;
 	}
